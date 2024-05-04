@@ -98,9 +98,9 @@ Interactions: MongoDB stores likes and comments associated with posts. Express.j
 News Feed: MongoDB stores posts from friends, which are retrieved and displayed in the user's personalized news feed. React Router enables navigation between different views, while Redux Toolkit manages the global state to update the news feed in real-time.
 
 ## Code & Snippets: 
-Backend Code Snippets:
+# Backend Code Snippets:
 
-Frontend Code Snippets:
+#Frontend Code Snippets:
 
 
 
