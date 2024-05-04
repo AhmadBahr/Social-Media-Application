@@ -24,7 +24,8 @@ MongoDB is a NoSQL database that stores data in flexible, JSON-like documents. I
 
 ## MongoDB Schema
 
-![sociopedia-schema](https://github.com/AhmadBahr/Social-Media-Website/assets/150359856/365805c2-66e8-4ecc-8564-e65cc028cc77)
+![schema](https://github.com/AhmadBahr/Social-Media-Application/assets/150359856/1db1d036-8617-4938-a355-344e748d9df7)
+
 
 
 # Mongoose
