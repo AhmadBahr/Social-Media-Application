@@ -4,6 +4,8 @@ import WidgetWrapper from "components/WidgetWrapper";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setFriends } from "state";
+import { Avatar, AvatarBadge, AvatarGroup } from '@chakra-ui/react'
+
 
 const FriendListWidget = ({ userId }) => {
   const dispatch = useDispatch();
@@ -11,16 +13,33 @@ const FriendListWidget = ({ userId }) => {
   const token = useSelector((state) => state.token);
   const friends = useSelector((state) => state.user.friends);
 
+  // Mock data for three friends
+  const mockFriends = [
+    {
+      _id: "1",
+      firstName: "John",
+      lastName: "Doe",
+      occupation: "Software Engineer",
+      src: "https://bit.ly/dan-abramov",
+    },
+    {
+      _id: "2",
+      firstName: "Jane",
+      lastName: "Doe",
+      occupation: "Graphic Designer",
+      src: "https://bit.ly/tioluwani-kolawole",
+    },
+    {
+      _id: "3",
+      firstName: "Alice",
+      lastName: "Smith",
+      occupation: "Data Scientist",
+      src: "https://bit.ly/kent-c-dodds",
+    },
+  ];
+
   const getFriends = async () => {
-    const response = await fetch(
-      `http://localhost:3001/users/${userId}/friends`,
-      {
-        method: "GET",
-        headers: { Authorization: `Bearer ${token}` },
-      }
-    );
-    const data = await response.json();
-    dispatch(setFriends({ friends: data }));
+    dispatch(setFriends({ friends: mockFriends }));
   };
 
   useEffect(() => {
@@ -44,7 +63,7 @@ const FriendListWidget = ({ userId }) => {
             friendId={friend._id}
             name={`${friend.firstName} ${friend.lastName}`}
             subtitle={friend.occupation}
-            userPicturePath={friend.picturePath}
+            src={friend.src}
           />
         ))}
       </Box>
