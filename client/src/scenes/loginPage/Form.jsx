@@ -15,6 +15,9 @@ import { useDispatch } from "react-redux";
 import { setLogin } from "state";
 import Dropzone from "react-dropzone";
 import FlexBetween from "components/FlexBetween";
+import { IconButton, InputAdornment } from "@mui/material";
+import { Visibility, VisibilityOff } from "@mui/icons-material";
+import { Check as CheckIcon } from "@mui/icons-material";
 
 const registerSchema = yup.object().shape({
   firstName: yup.string().required("required"),
@@ -39,11 +42,13 @@ const initialValuesRegister = {
   location: "",
   occupation: "",
   picture: "",
+  showPassword: false,
 };
 
 const initialValuesLogin = {
   email: "",
   password: "",
+  showPassword: false,
 };
 
 const Form = () => {
@@ -221,15 +226,68 @@ const Form = () => {
             />
             <TextField
               label="Password"
-              type="password"
+              type={values.showPassword ? "password" : "text"}
               onBlur={handleBlur}
               onChange={handleChange}
               value={values.password}
               name="password"
               error={Boolean(touched.password) && Boolean(errors.password)}
               helperText={touched.password && errors.password}
+              InputProps={{
+                endAdornment: (
+                  <InputAdornment position="end">
+                    <IconButton
+                      onClick={() => setFieldValue("showPassword", !values.showPassword)}
+                      edge="end"
+                    >
+                      {values.showPassword ? <VisibilityOff /> : <Visibility />}
+                    </IconButton>
+                  </InputAdornment>
+                ),
+              }}
               sx={{ gridColumn: "span 4" }}
             />
+
+            {values.password && (
+              <Box mt={1} display="flex" alignItems="center">
+                <CheckIcon style={{ color: values.password.length >= 8 ? "green" : "red" }} />
+                <Typography variant="body2" sx={{ ml: 1, color: values.password.length >= 8 ? "green" : "red" }}>
+                  Minimum 8 characters
+                </Typography>
+              </Box>
+            )}
+            {values.password && (
+              <Box mt={1} display="flex" alignItems="center">
+                <CheckIcon style={{ color: /[a-z]/.test(values.password) ? "green" : "red" }} />
+                <Typography variant="body2" sx={{ ml: 1, color: /[a-z]/.test(values.password) ? "green" : "red" }}>
+                  Contains lowercase letters
+                </Typography>
+              </Box>
+            )}
+            {values.password && (
+              <Box mt={1} display="flex" alignItems="center">
+                <CheckIcon style={{ color: /[A-Z]/.test(values.password) ? "green" : "red" }} />
+                <Typography variant="body2" sx={{ ml: 1, color: /[A-Z]/.test(values.password) ? "green" : "red" }}>
+                  Contains uppercase letters
+                </Typography>
+              </Box>
+            )}
+            {values.password && (
+              <Box mt={1} display="flex" alignItems="center">
+                <CheckIcon style={{ color: /\d/.test(values.password) ? "green" : "red" }} />
+                <Typography variant="body2" sx={{ ml: 1, color: /\d/.test(values.password) ? "green" : "red" }}>
+                  Contains a number
+                </Typography>
+              </Box>
+            )}
+            {values.password && (
+              <Box mt={1} display="flex" alignItems="center">
+                <CheckIcon style={{ color: /[!@#$%^&*(),.?":{}|<>]/.test(values.password) ? "green" : "red" }} />
+                <Typography variant="body2" sx={{ ml: 1, color: /[!@#$%^&*(),.?":{}|<>]/.test(values.password) ? "green" : "red" }}>
+                  Contains a special character
+                </Typography>
+              </Box>
+            )}
           </Box>
 
           {/* BUTTONS */}
