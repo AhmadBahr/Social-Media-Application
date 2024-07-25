@@ -108,9 +108,10 @@ News Feed: MongoDB stores posts from friends, which are retrieved and displayed 
 
 ## Frontend Code Snippets:
 
-
+![Untitled - Google Chrome 26-Jul-24 12_18_23 AM](https://github.com/user-attachments/assets/a159ca79-0280-4261-86d6-40bef383191b)
 ![Welcome - Social-Media-Application - ahmad - Visual Studio Code 26-Jul-24 12_08_27 AM](https://github.com/user-attachments/assets/8ae2feed-9649-4b0b-a220-b88838db2673)
 ![Welcome - Social-Media-Application - ahmad - Visual Studio Code 26-Jul-24 12_08_10 AM](https://github.com/user-attachments/assets/6c4296f0-a156-4fc2-8335-ac2b8143ca50)
 ![Welcome - Social-Media-Application - ahmad - Visual Studio Code 26-Jul-24 12_07_59 AM](https://github.com/user-attachments/assets/b97c50cc-a461-469a-a086-772ae9436fdd)
+![d4e9121d-a04f-4a73-91fb-9b091d90c765](https://github.com/user-attachments/assets/21aa156e-b98c-4327-b645-aa34336eae9b)
 
 
