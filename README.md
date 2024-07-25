@@ -99,9 +99,18 @@ News Feed: MongoDB stores posts from friends, which are retrieved and displayed 
 
 # Code & Snippets: 
 ## Backend Code Snippets:
+![Welcome - Social-Media-Application - ahmad - Visual Studio Code 26-Jul-24 12_07_29 AM](https://github.com/user-attachments/assets/b3c9edfa-0230-4fc8-89ec-1e339cbd418c)
+![Welcome - Social-Media-Application - ahmad - Visual Studio Code 26-Jul-24 12_06_58 AM](https://github.com/user-attachments/assets/7fcf7fc2-476c-48d6-9f99-c5bd054b3355)
+![Welcome - Social-Media-Application - ahmad - Visual Studio Code 26-Jul-24 12_05_51 AM](https://github.com/user-attachments/assets/44150cbc-c144-43ea-bf65-f31b968a6f01)
+![Welcome - Social-Media-Application - ahmad - Visual Studio Code 26-Jul-24 12_05_38 AM](https://github.com/user-attachments/assets/7d70c7ae-37dd-4e00-a03e-088f3a47038d)
+![Welcome - Social-Media-Application - ahmad - Visual Studio Code 26-Jul-24 12_04_53 AM](https://github.com/user-attachments/assets/575d1317-3f98-4be6-a3cb-bcce40d9e628)
+![MINGW64__c_Users_ATTO_Desktop_Social-Media-Application_server 26-Jul-24 12_06_13 AM](https://github.com/user-attachments/assets/0c9f8ef7-e6ad-4e43-a199-57c75b3c81dc)
 
 ## Frontend Code Snippets:
 
 
+![Welcome - Social-Media-Application - ahmad - Visual Studio Code 26-Jul-24 12_08_27 AM](https://github.com/user-attachments/assets/8ae2feed-9649-4b0b-a220-b88838db2673)
+![Welcome - Social-Media-Application - ahmad - Visual Studio Code 26-Jul-24 12_08_10 AM](https://github.com/user-attachments/assets/6c4296f0-a156-4fc2-8335-ac2b8143ca50)
+![Welcome - Social-Media-Application - ahmad - Visual Studio Code 26-Jul-24 12_07_59 AM](https://github.com/user-attachments/assets/b97c50cc-a461-469a-a086-772ae9436fdd)
 
 
